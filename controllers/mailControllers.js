@@ -11,14 +11,14 @@ export const mailSender = async (req, res, ) => {
         let mailTransporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user: 'ali@truenation.ai',
-                pass: 'dikehuuccihduuat'
+                user: 'SENDER-GMAIL-ACCOUNT',
+                pass: 'SENDER-GMAIL-NODEMAILER-PASS'
             }
         });
     
         let mailDetails = {
-            from: 'ali@truenation.ai',
-            to: 'ali@truenation.ai',
+            from: 'SENDER-GMAIL-ACCOUNT',
+            to: 'RECEIVER-GMAIL-ACCOUNT',
             subject: 'xPath not found',
             text: `Website Name: ${websiteName}
             Missing xPath: ${xPath}`
